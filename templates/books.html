@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3> List of Books </h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publication Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for User in users %}
+        <tr>
+            <td>{{ User.title }}</td>
+            <td>{{ User.author }}</td>
+            <td>{{ User.publicationyear }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
